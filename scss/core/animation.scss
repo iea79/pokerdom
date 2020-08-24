@@ -1,0 +1,199 @@
+@keyframes smokeAnim {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    20% {
+        opacity: 0.7;
+    }
+
+    50% {
+        opacity: 1;
+        transform: translateX(-0.5em);
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes smokeAnim2 {
+    0% {
+        opacity: 1;
+        transform: translateX(0em);
+    }
+
+    20% {
+        opacity: 0.8;
+    }
+
+    60% {
+        opacity: 1;
+        transform: translateX(1em);
+    }
+
+    70% {
+        opacity: 0.9;
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes blinkLamp {
+    0% {
+        opacity: 1;
+    }
+
+    10% {
+        opacity: 0.9;
+    }
+
+    15% {
+        opacity: 0.7;
+    }
+
+    20% {
+        opacity: 0.3;
+    }
+
+    25% {
+        opacity: 0.6;
+    }
+
+    30% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0.9;
+    }
+
+    55% {
+        opacity: 0.7;
+    }
+
+    60% {
+        opacity: 1;
+    }
+
+    65% {
+        opacity: 0.6;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blinkLampLg {
+    0% {
+        opacity: 1;
+    }
+
+    11% {
+        opacity: 0.9;
+    }
+
+    16% {
+        opacity: 0.7;
+    }
+
+    21% {
+        opacity: 1;
+    }
+
+    26% {
+        opacity: 0.6;
+    }
+
+    31% {
+        opacity: 1;
+    }
+
+    51% {
+        opacity: 0.9;
+    }
+
+    56% {
+        opacity: 0.7;
+    }
+
+    61% {
+        opacity: 1;
+    }
+
+    66% {
+        opacity: 0.6;
+    }
+
+    81% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes blinkLampMan {
+    0% {
+        filter: grayscale(0);
+    }
+
+    11% {
+        filter: grayscale(0.1);
+    }
+
+    16% {
+        filter: grayscale(0.3);
+    }
+
+    21% {
+        filter: grayscale(0);
+    }
+
+    26% {
+        filter: grayscale(0.4);
+    }
+
+    31% {
+        filter: grayscale(0);
+    }
+
+    51% {
+        filter: grayscale(0.1);
+    }
+
+    56% {
+        filter: grayscale(0.3);
+    }
+
+    61% {
+        filter: grayscale(0);
+    }
+
+    66% {
+        filter: grayscale(0.4);
+    }
+
+    81% {
+        filter: grayscale(0);
+    }
+
+    100% {
+        filter: grayscale(0);
+    }
+}

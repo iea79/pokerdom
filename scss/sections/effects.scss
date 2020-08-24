@@ -1,0 +1,49 @@
+.effects {
+    padding: 0.8em 0 0;
+
+    @media (min-width: 768px) {
+        padding: 7.7em 0 0;
+    }
+
+    .section {
+        &__title {
+
+            @media (max-width: 767px) {
+                font-size: 2em;
+                margin-left: -1em;
+                margin-right: -1em;
+            }
+        }
+
+    }
+
+    .container_center {
+        max-width: 72.2em;
+    }
+
+    &__content {
+        margin: 2.5em 0.7em 0.5em;
+
+        @media (min-width: 768px) {
+            margin: 3.5em -1.5em;
+            display: flex;
+        }
+    }
+
+    &__img {
+        width: 100%;
+        padding: 0 1.5em 2.7em;
+
+        @media (min-width: 768px) {
+            width: 50%;
+            padding: 0 1.5em;
+        }
+    }
+
+    .parallaxItem {
+        right: 4.3em;
+        bottom: -154em;
+        width: 12.3em;
+    }
+
+}

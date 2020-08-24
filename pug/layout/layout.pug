@@ -1,4 +1,4 @@
--var version = '0.1';
+-var version = '0.9';
 <!DOCTYPE html>
 html(lang="en")
     head
@@ -9,11 +9,11 @@ html(lang="en")
 
         link(rel="stylesheet", type="text/css", href="css/style.css?"+version+"")
     body
-        include header.pug
+        //- include header.pug
 
         main.main_content
             block content
 
-        include footer.pug
+            include footer.pug
 
         include scripts.pug

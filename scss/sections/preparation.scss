@@ -1,0 +1,47 @@
+.preparation {
+    position: relative;
+    z-index: 5;
+    margin-top: -5.3em;
+
+    .section {
+        &__title {
+            max-width: 18em;
+            position: relative;
+            z-index: 2;
+        }
+    }
+
+    &__content {}
+
+    &__cams {
+        position: relative;
+        margin: -16.5em -27em 0 -23em;
+
+        @media (min-width: 768px) {
+            margin: -15.6em auto 0;
+            max-width: 103em;
+        }
+
+        > img {
+            position: relative;
+            right: 2.2em;
+        }
+    }
+
+    &__slider {
+        position: absolute;
+        z-index: 2;
+        top: 21.9em;
+        right: 26.4em;
+        width: 31.7em;
+
+        @media (min-width: 768px) {
+            top: 25.9em;
+            right: 21.4em;
+            width: 36.5em;
+        }
+    }
+
+    &__cadr {}
+
+}

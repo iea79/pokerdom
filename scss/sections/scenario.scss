@@ -1,0 +1,73 @@
+.scenario {
+    position: relative;
+    z-index: 4;
+    padding: 0;
+
+    @media (min-width: 768px) {
+        padding: 4em 0;
+    }
+
+    .section {
+        &__title {
+            margin-bottom: 0.5em;
+
+            @media (max-width: 767px) {
+                margin-top: -0.8em;
+                font-size: 3em;
+                text-align: center;
+            }
+        }
+
+        &__sub {
+            display: none;
+
+            @media (min-width: 768px) {
+                display: block;
+                font-size: 1.33em;
+                line-height: 2;
+            }
+        }
+
+    }
+
+    &__content {
+
+        @media (min-width: 768px) {
+            max-width: 71em;
+            margin: auto;
+        }
+    }
+
+    &__man {
+        margin: -5.7em -8.2em 10.7em;
+
+        @media (min-width: 768px) {
+            margin: -5.7em 0 -3.5em;
+        }
+
+        img {
+            position: relative;
+            right: -1.1em;
+            z-index: -1;
+        }
+    }
+
+    &__paper {
+        img {
+            position: absolute;
+            // transition: transform 0.1s;
+
+            &:first-child {
+                right: 15.4em;
+                top: 27.2em;
+                width: 7.5em;
+            }
+
+            &:last-child {
+                left: 10.2em;
+                bottom: 10.7em;
+                width: 13em;
+            }
+        }
+    }
+}

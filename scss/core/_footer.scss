@@ -1,13 +1,100 @@
 /* Footer
  ----------------------------------------------------------------------------- */
 .footer {
-	// font-size: $main_font_size;
-	position: relative;
-	// height: $footer_height;
-	background: #BFF08E;
-	// @extend %clear_all;
-	.container_center {
-		// padding-top: 10px;
-		// padding-bottom: 10px;
+	padding: 0.9em 0 4em;
+
+	&__content {
+		padding: 0 1.6em;
+
+		@media (min-width: 768px) {
+			max-width: 65.3em;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
+			padding: 0;
+		}
 	}
+
+	&__left {
+		@media (max-width: 767px) {
+			text-align: center;
+		}
+	}
+
+	&__name {
+		color: #ffc662;
+		font-size: 2.7em;
+		line-height: 1.55;
+		font-weight: 400;
+		margin: 0 auto 0.35em;
+		letter-spacing: 0.02em;
+		font-family: $title_font_family;
+
+		@media (min-width: 768px) {
+			font-size: 3.1em;
+			margin: 0 auto 0.25em;
+		}
+
+		@supports (background-clip: text) {
+			background-image: linear-gradient(-190deg, #ffc662 0%, #8a5f0c 100%);
+			background-clip: text;
+			color: transparent;
+		}
+
+	}
+
+	&__prof {
+		font-size: 2.1em;
+		font-style: italic;
+		font-weight: 600;
+		padding: 0 1em;
+		margin-bottom: 1.7em;
+		line-height: 1.6;
+
+		@media (min-width: 768px) {
+			font-size: 1.5em;
+			line-height: 1.3;
+			padding: 0;
+		}
+	}
+
+	&__text {
+		line-height: 1.9;
+		font-weight: 600;
+		opacity: 0.7;
+		font-size: 1.7em;
+		padding: 0 1.4em;
+		text-align: left;
+
+		@media (min-width: 768px) {
+			opacity: 0.38;
+			line-height: 1.5;
+			max-width: 30em;
+			font-size: 1em;
+			padding: 0;
+		}
+
+		p {
+			margin: 1.4em 0;
+		}
+	}
+
+	&__logo {
+		flex: none;
+		margin: 4.9em 0 0 6.3em;
+		width: 23.3em;
+
+		@media (min-width: 768px) {
+			margin: -0.7em -1em 0 2em;
+			width: 23.7em;
+
+		}
+	}
+
+	.parallaxItem {
+		top: 113.3em;
+		left: -6.2em;
+		width: 14.2em;
+	}
+
 }

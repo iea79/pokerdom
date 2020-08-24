@@ -1,0 +1,39 @@
+.section {
+    &__title {
+        color: #ffc662;
+        font-size: 3em;
+        line-height: 1.45;
+        font-weight: 400;
+        margin: 0 auto 1em;
+        letter-spacing: 0.02em;
+        font-family: $title_font_family;
+
+        @media (min-width: 768px) {
+            line-height: 1.55;
+            font-size: 3.1em;
+        }
+
+        @supports (background-clip: text) {
+            background-image: linear-gradient(-190deg, #ffc662 0%, #8a5f0c 100%);
+            background-clip: text;
+            color: transparent;
+        }
+
+        &_center {
+            text-align: center;
+        }
+
+        @media (max-width: 767px) {
+            padding-left: 1em;
+            padding-right: 1em;
+        }
+    }
+
+    &__sub {
+        line-height: 1.55;
+        font-size: 1.65em;
+        font-weight: 600;
+        font-family: $seccond_font_family;
+        margin: 1.2em 0 0.5em;
+    }
+}

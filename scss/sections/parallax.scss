@@ -1,0 +1,21 @@
+.parallax {
+    &Box {
+        position: relative;
+    }
+
+    &Item,
+    &Mouse {
+
+        @media (min-width: 768px) {
+            perspective: 200em;
+            transform-style: preserve-3d;
+            transition: transform 0.1s linear;
+            position: absolute;
+            z-index: 15;
+        }
+
+        @media (max-width: 767px) {
+            display: none;
+        }
+    }
+}

@@ -5,37 +5,165 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css?0.1"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css?0.9"/>
   </head>
   <body>
-    <header class="header">
-      <div class="header__content">
-        <div class="header__left"><a class="logo" href="/"><img src="img/logo.png" alt="alt"/></a></div>
-        <nav class="header__right">
-          <ul class="navbar">
-            <li class="navbar__item"><a class="navbar__link" href="">Page1</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Page2</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Page3</a></li>
-            <li class="navbar__item"><a class="navbar__link" href="">Page4</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
     <main class="main_content">
-      <div class="container_center">
-        <div class="grid">
-          <div class="grid__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur, in.</div>
-          <div class="grid__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo numquam sequi officiis. Quia sed modi voluptatem, aut rem possimus at ipsa nobis iure non corporis nulla suscipit praesentium quos numquam quasi magni delectus eius illo, harum hic id! Laboriosam culpa recusandae nesciunt ab natus molestiae porro reiciendis, eveniet architecto temporibus!</div>
-          <div class="grid__item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt fugiat, pariatur, explicabo ut quidem deleniti velit sed error dolor! Voluptates dignissimos consectetur repudiandae ipsam. Iusto, rerum, quam! Corporis, nisi, inventore?</div>
+      <!-- begin home-->
+      <section class="home section parallaxBox" id="home">
+        <div class="home__bg"></div>
+        <div class="home__content">
+          <div class="home__sub">Making of</div>
+          <div class="home__title"><img src="img/logo.png" alt=""/></div>
+          <div class="home__sub">Рекламный ролик</div>
+        </div><img class="parallaxItem pieces" src="img/fishka-1.png" alt="" data-speed="3"/><img class="parallaxItem pieces-sm" src="img/fishka-2.png" alt="" data-speed="1"/><img class="parallaxItem cart" src="img/carts.png" alt="" data-speed="8"/>
+      </section>
+      <!-- end home-->
+      <!-- begin task-->
+      <section class="task section parallaxBox" id="task">
+        <div class="task__content">
+          <div class="task__left"><img src="img/book.png" alt=""/><img class="task__rad" src="img/task-radial.png" alt=""/></div>
+          <div class="task__right">
+            <h2 class="section__title"> <span>Задача:</span></h2>
+            <div class="task__sub">Разработка креативного, продающего видео-ролика для YouTube формата.</div>
+            <h3 class="section__sub">Первое, что мы сделали – изучили правила игры в покер.</h3>
+          </div>
+        </div><img class="parallaxItem pieces" src="img/fishka-3.png" alt="" data-speed="3"/>
+      </section>
+      <!-- end task-->
+      <!-- begin solution-->
+      <section class="solution section" id="solution">
+        <h2 class="section__title section__title_center">Мы решили сделать ролик в стиле Америки 60х</h2>
+        <div class="solution__content">
+          <div class="solution__left"><img src="img/man.png" alt=""/></div>
+          <div class="solution__center"><img src="img/desk.png" alt=""/></div>
+          <div class="solution__right"><img class="solution__lamp" src="img/lamp.png" alt=""/><img class="solution__lampLight solution__lampLight_first" src="img/lamp-light.png" alt=""/><img class="solution__lampLight solution__lampLight_second" src="img/lamp-light-2.png" alt=""/><img class="solution__list" src="img/check-list.png" alt=""/></div>
+        </div>
+        <div class="solution__smoke"><img src="img/smoke-left.png" alt=""/><img src="img/smoke-right.png" alt=""/></div>
+      </section>
+      <!-- end solution-->
+      <!-- begin scenario-->
+      <section class="scenario section parallaxBox" id="scenario">
+        <div class="scenario__content">
+          <h2 class="section__title">Написали крутой сценарий</h2>
+          <h3 class="section__sub">Мы хотели связать историю игры в покер <br>с современным приложением Poker Dom </h3>
+          <div class="scenario__man"><img src="img/sceenario.png" alt=""/></div>
+        </div>
+        <div class="scenario__paper"><img class="parallaxMouse" src="img/paper-sm.png" alt="" data-speed="2"/><img class="parallaxMouse" src="img/paper-lg.png" alt="" data-speed="8"/></div>
+      </section>
+      <!-- end scenario-->
+      <!-- begin preparation-->
+      <section class="preparation section" id="preparation">
+        <div class="preparation__content">
+          <h2 class="section__title section__title_center">Подготовили раскадровку будущего ролика</h2>
+          <div class="preparation__cams"><img src="img/cams.png" alt=""/>
+            <div class="preparation__slider">
+              <div class="preparation__cadr"><img src="img/cadr.png" alt=""/></div>
+              <div class="preparation__cadr"><img src="img/cadr.png" alt=""/></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end preparation-->
+      <!-- begin heroes-->
+      <section class="heroes section parallaxBox" id="heroes">
+        <div class="container_center">
+          <h2 class="section__title section__title_center">Чтобы передать атмосферу 60х нужна подходящая локация, а главное – герои</h2>
+          <h3 class="section__sub">Мы проверили кастинг среди 37 актеров, <br>чтобы выбрать четырех настоящих гагстеров</h3>
+          <div class="heroes__slider">
+            <div class="heroes__item"><img src="img/hero1.png" alt=""/></div>
+            <div class="heroes__item"><img src="img/hero2.png" alt=""/></div>
+            <div class="heroes__item"><img src="img/hero3.png" alt=""/></div>
+            <div class="heroes__item"><img src="img/hero3.png" alt=""/></div>
+          </div>
+        </div><img class="parallaxItem" src="img/fishka-4.png" alt="" data-speed="3"/>
+      </section>
+      <!-- end heroes-->
+      <!-- begin studio-->
+      <section class="studio section" id="studio"><img class="studio__ellips" src="img/studio-elipse.png" alt=""/>
+        <div class="container_center">
+          <h2 class="section__title section__title_center">В качестве локации мы арендовали студию</h2>
+          <h3 class="section__sub">и превратили ее в настоящее подпольное казино с блэк джеком <br>и  шлю  гангстерами</h3>
+          <div class="studio__list">
+            <div class="studio__item"><img src="img/study1.png" alt=""/></div>
+            <div class="studio__item"><img src="img/study2.png" alt=""/></div>
+            <div class="studio__item"><img src="img/study3.png" alt=""/></div>
+          </div>
+          <div class="studio__debris"><img class="parallaxItem" src="img/debris-left.png" alt="" data-speed="5"/><img class="parallaxItem" src="img/debris-left.png" alt="" data-speed="3"/><img class="parallaxItem" src="img/debris-buttle.png" alt="" data-speed="1"/><img class="parallaxItem" src="img/debris-right.png" alt="" data-speed="4"/></div>
+          <div class="studio__descr">
+            <div class="studio__text mobile">
+              <h4>Вы думаете, съемки прошли гладко и всё было по плану? Как бы ни так...</h4><span>Но мы научились выходить из таких ситуаций красиво</span>
+            </div>
+            <div class="studio__buttle"><img src="img/buttle.png" alt=""/></div>
+            <div class="studio__text">
+              <h4 class="desktop">Вы думаете, съемки прошли гладко и всё было по плану? Как бы ни так...</h4><span class="desktop">Но мы научились выходить из таких ситуаций красиво</span>
+              <p>Это бутылка из сахара. Используется в качестве реквизита на съемках для замены стеклянной бутылки<img class="studio__arrow" src="img/studio-arrow.png" alt=""/></p>
+              <h4>Преимущества:</h4>
+              <ol>
+                <li>легче стеклянной бутылки</li>
+                <li>менее прочная</li>
+                <li>внешне никак не отличается от стекла</li>
+              </ol>
+              <h4>Недостатки:</h4>
+              <ol>
+                <li>если нужно разбить бутылку о голову, то наносить удар необходимо только средней частью. Ни в коем случае не бить донышком бутылки! Иначе боль будет, как при ударе от обычной бутылки</li>
+              </ol>
+            </div>
+          </div>
+          <div class="section__sub">Теперь догадываетесь, почему удар бутылкой о голову быль столь реалистичным? А ведь мы говорили, бей по нему только средней частью бутылки...</div>
+        </div>
+      </section>
+      <!-- end studio-->
+      <!-- begin effects-->
+      <section class="effects section parallaxBox" id="effects">
+        <div class="container_center">
+          <h2 class="section__title section__title_center">Добавили компьютерную графику для динамичности ролика</h2>
+          <div class="effects__content">
+            <div class="effects__img"><img src="img/effects1.png" alt=""/></div>
+            <div class="effects__img"><img src="img/effects2.png" alt=""/></div>
+          </div>
+        </div><img class="parallaxItem" src="img/fishka-5.png" alt="" data-speed="3"/>
+      </section>
+      <!-- end effects-->
+      <!-- begin rezultat-->
+      <section class="rezultat section" id="rezultat">
+        <div class="rezultat__content">
+          <h2 class="section__title section__title_center">Посмотрите, что у нас получилось</h2><img class="rezultat__sinema" src="img/sinema.png" alt=""/>
+          <div class="rezultat__video">
+            <div id="video"></div>
+            <div class="rezultat__wrap">
+              <div class="rezultat__full"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- end rezultat-->
+      <!-- Begin Modal videoModal-->
+      <div class="modal fade videoModal" id="videoModal">
+        <div class="modal-dialog">
+          <div class="modal-content"><a class="rezultat__close" href="#" data-dismiss="modal"></a></div>
         </div>
       </div>
+      <!-- End modal videoModal-->
+      <footer class="footer parallaxBox">
+        <div class="footer__content">
+          <div class="footer__left">
+            <div class="footer__name">Иван Иван Иванович</div>
+            <div class="footer__prof">Директор по маркетингу компании Бургер Кинг</div>
+            <div class="footer__text">
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas cursus sem ipsum, sed scelerisque diam fringilla eu. Phasellus com modo, magna a lobortis dictum, mi est ullamcorper justo, quis cong</p>
+              <p>ue erat nunc et nisi. Proin viverra efficitur eros. Pellentesque volutpat finibus libero, a lacinia metus lobortis eget. Vestibulum at odio ex. </p>
+              <p>Duis auctor gravida ultricies. Etiam vestibulum cursus enim a lacinia.</p>
+            </div>
+          </div>
+          <div class="footer__logo"><img src="img/logo-lg.png" alt=""/></div>
+        </div><img class="parallaxItem" src="img/fishka-6.png" alt="" data-speed="2"/>
+      </footer>
     </main>
-    <footer class="footer">
-      <div class="container_center">
-        <p></p>&copy; 2016 |<i class="fa fa-github" aria-hidden="true">&nbsp;</i><a href="#">View Source</a>
-      </div>
-    </footer>
     <script src="js/jquery.js"></script>
-    <script src="js/function.js?0.1"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/player.js"></script>
+    <script src="js/modal.js"></script>
+    <script src="js/function.min.js?0.9"></script>
   </body>
 </html>
