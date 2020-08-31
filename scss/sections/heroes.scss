@@ -68,14 +68,16 @@
 
             &-arrow {
                 background-color: transparent;
+                background-size: 100%;
+                background-repeat: no-repeat;
                 border: 0;
                 outline: 0;
                 position: absolute;
                 cursor: pointer;
                 z-index: 10;
+                top: 50%;
                 width: 3.4em;
                 height: 2.7em;
-                top: 50%;
                 margin-top: -4.1em;
                 transition: color 0.3s;
                 color: rgba(#fff, 1);

@@ -2,6 +2,8 @@
     position: relative;
     z-index: 5;
     margin-top: -5.3em;
+    background: url("../../img/preparation-light.png") center no-repeat;
+    background-size: auto 100%;
 
     .section {
         &__title {
@@ -15,30 +17,62 @@
 
     &__cams {
         position: relative;
-        margin: -16.5em -27em 0 -23em;
+        // margin: -16.5em -27em 0 -23em;
+        height: 45em;
+
+        > img {
+            opacity: 0;
+        }
 
         @media (min-width: 768px) {
-            margin: -15.6em auto 0;
-            max-width: 103em;
+            // margin: -15.6em auto 0;
+            // max-width: 103em;
+            height: 58em;
         }
 
         > img {
             position: relative;
             right: 2.2em;
         }
+
+    }
+
+    &__pulse {
+        position: absolute;
+        right: auto;
+        top: 4.8em;
+        left: -25.3em;
+        width: 75.1em;
+        max-width: none;
+        z-index: 2;
+        // filter: opacity(0.5);
+        // animation: blinkLamp 1s infinite;
+
+        @media (min-width: 768px) {
+            top: 3.7em;
+            left: 5.5em;
+            width: 87.3em;
+            // filter: opacity(1);
+        }
+
     }
 
     &__slider {
         position: absolute;
         z-index: 2;
-        top: 21.9em;
-        right: 26.4em;
-        width: 31.7em;
+        top: 3.9em;
+        right: 0.4em;
+        width: 40.7em;
+        padding: 2.5em 3em 2.5em 15em;
+
+        background: url("../img/films.png") 0 0 no-repeat;
+        background-size: 100% 100%;
 
         @media (min-width: 768px) {
-            top: 25.9em;
-            right: 21.4em;
-            width: 36.5em;
+            top: 7.6em;
+            right: 20.1em;
+            padding: 3.5em 6em 3.5em 14em;
+            width: 51.9em;
         }
     }
 

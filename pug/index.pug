@@ -20,7 +20,8 @@ block content
     section#task.task.section.parallaxBox
         .task__content
             .task__left
-                img(src="img/book.png", alt="")
+                img.task__shadow(src="img/shadow.png", alt="")
+                img.task__book(src="img/book.png", alt="")
                 img.task__rad(src="img/task-radial.png", alt="")
             .task__right
                 h2.section__title 
@@ -36,17 +37,24 @@ block content
     section#solution.solution.section
         h2.section__title.section__title_center Мы решили сделать ролик в стиле Америки 60х
         .solution__content
+            //- img.solution__dark(src="img/solution-dark.jpg", alt="")
+            //- img.solution__light(src="img/solution-light.jpg", alt="")
             .solution__left
                 img(src="img/man.png", alt="")
+                img(src="img/man-light.png", alt="")
 
             .solution__center
                 img(src="img/desk.png", alt="")
+                img(src="img/desk-light.png", alt="")
+                img.solution__desk(src="img/solution-desk.png", alt="")
+                img.solution__desk.anim(src="img/solution-desk-light.png", alt="")
 
             .solution__right
                 img.solution__lamp(src="img/lamp.png", alt="")
-                img.solution__lampLight.solution__lampLight_first(src="img/lamp-light.png", alt="")
-                img.solution__lampLight.solution__lampLight_second(src="img/lamp-light-2.png", alt="")
+                img.solution__lampLight.solution__lampLight_first(src="img/lamp-light-2.png", alt="")
+                img.solution__lampLight.solution__lampLight_second(src="img/lamp-light.png", alt="")
                 img.solution__list(src="img/check-list.png", alt="")
+                img.solution__list(src="img/check-list-light.png", alt="")
 
         .solution__smoke
             img(src="img/smoke-left.png", alt="")
@@ -73,12 +81,14 @@ block content
         .preparation__content
             h2.section__title.section__title_center Подготовили раскадровку будущего ролика
             .preparation__cams
-                img(src="img/cams.png", alt="")
+                //- img(src="img/cams.png", alt="")
                 .preparation__slider
                     .preparation__cadr
                         img(src="img/cadr.png", alt="")
                     .preparation__cadr
                         img(src="img/cadr.png", alt="")
+
+            img.preparation__pulse(src="img/camera-light.png", alt="")
 
     // end preparation
 
@@ -152,9 +162,9 @@ block content
             h2.section__title.section__title_center Добавили компьютерную графику для динамичности ролика
             .effects__content
                 .effects__img
-                    img(src="img/effects1.png", alt="")
+                    img(src="img/Pocker_безCG.gif", alt="")
                 .effects__img
-                    img(src="img/effects2.png", alt="")
+                    img(src="img/Pocker_CG.gif", alt="")
 
         img.parallaxItem(src="img/fishka-5.png", alt=""  data-speed="3")
 

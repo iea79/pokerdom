@@ -48,6 +48,29 @@
         @media (max-width: 767px) {}
     }
 
+    &__book {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+    }
+
+    &__shadow {
+        position: absolute;
+        display: block;
+        max-width: none;
+        top: 1.5em;
+        left: -14.9em;
+        width: 108.5em;
+        z-index: 3;
+        opacity: 0.4;
+
+        @media (min-width: 768px) {
+            top: 14.5em;
+            left: -12.4em;
+            // width: 87.5em;
+        }
+    }
+
     &__right {
         position: relative;
         z-index: 2;
@@ -73,12 +96,19 @@
     }
 
     &__rad {
-        width: 111.938em;
+        width: 150.938em;
         position: absolute;
         max-width: none;
-        top: -46em;
-        left: -22.4em;
-        z-index: -1;
+        top: -65em;
+        left: -35.4em;
+        z-index: 2;
+
+        @media (max-width: 767px) {
+            width: 111.938em;
+            left: -22.4em;
+            top: -46em;
+
+        }
     }
 
     .parallaxItem {

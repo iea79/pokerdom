@@ -96,21 +96,12 @@ function playVideo(box) {
         fullscr = $('.rezultat__full'),
         preview = {
             id: 427315595,
-            // loop: false,
-            volume: 0,
-            // controls: true,
-            // autoplay: false,
-            // width: '100%'
+            title: false,
         },
         player = new Vimeo.Player('video', preview),
         played = false,
         top = $(window).scrollTop(),
         start = section.offset().top - 100;
-
-
-
-    // console.log(top);
-    // console.log(start);
 
     $(window).scroll(function(){
         top = $(window).scrollTop();
@@ -118,50 +109,33 @@ function playVideo(box) {
 
         if (top > start && top < (start + section.height())) {
             if (played === false) {
-                player.play();
                 played = true;
+                player.play();
                 player.setVolume(0);
-                console.log('play');
             }
         } else {
             played = false;
             player.pause();
-            console.log('pause');
+            // console.log('pause');
         }
     });
 
 
     fullscr.on('click', function(e) {
         player.requestFullscreen();
+        player.play();
     });
 
 
     player.on('fullscreenchange', function(e) {
-        console.log(e.fullscreen);
+        // console.log(e.fullscreen);
+        // console.log(e);
         if (e.fullscreen) {
             player.setVolume(1);
         } else {
             player.setVolume(0);
         }
-        // player.requestFullscreen();
-        // player.setVolume(1);
     });
-
-    // fullscr.on('click', function() {
-    //     modal.modal('show');
-    // });
-    //
-    // modal.on('show.bs.modal', function() {
-    //     video.appendTo('.videoModal .modal-content');
-    //     player.setVolume(1);
-    //     // player.play();
-    //     played = true;
-    // });
-    //
-    // modal.on('hide.bs.modal', function() {
-    //     video.prependTo('.rezultat__video');
-    //     player.setVolume(0);
-    // });
 
 }
 
